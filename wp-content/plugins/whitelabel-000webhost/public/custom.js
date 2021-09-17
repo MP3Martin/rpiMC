@@ -1,1 +1,0 @@
-jQuery(document).ready(function(){ 	jQuery('body').find('a[title="Hosted on free web hosting 000webhost.com. Host your own website for FREE."]').remove();});
