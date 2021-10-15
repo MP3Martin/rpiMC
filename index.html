@@ -19,7 +19,7 @@
 	<meta property="og:description" content="Minecraft server running on Raspberry pi 4b">
 	<meta property="og:url" content="https://hexagoncore.github.io/rpiMC/">
 	<meta property="og:site_name" content="rpiMC">
-	<meta property="article:modified_time" content="2021-10-11T14:40:35+00:00">
+	<meta property="article:modified_time" content="2021-10-15T04:52:08+00:00">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:label1" content="Est. reading time">
 	<meta name="twitter:data1" content="1 minute">
@@ -79,7 +79,7 @@
 	                "@id": "https://hexagoncore.github.io/rpiMC/#organization"
 	            },
 	            "datePublished": "2021-04-23T11:40:02+00:00",
-	            "dateModified": "2021-10-11T14:40:35+00:00",
+	            "dateModified": "2021-10-15T04:52:08+00:00",
 	            "description": "Minecraft server running on Raspberry pi 4b",
 	            "breadcrumb": {
 	                "@id": "https://hexagoncore.github.io/rpiMC/#breadcrumb"
@@ -329,23 +329,117 @@ img.emoji {
 <hr>
 <blockquote>
 <p>Join today and enjoy:</p>
-<p class="mtx"><a href="#joinscroll"><strong>Survival</strong></a> &#8211; <a href="#joinscroll"><strong>Creative</strong></a><span style="font-size: 12px;">          And more comming soon!</span></p>
-<h2><span style="color:#1abc9c">This is <strong>WIP</strong>!</span></h2>
+<div>
+<div class="grow" style="background-color: #2a75a9;">
+<p class="mtx"><a style="cursor: text;" href="#joinscroll"><strong>Survival</strong></a></p>
+</div>
+<div class="grow2">
+<p>&#8211;</p>
+</div>
+<div class="grow" style="background-color: #2a75a9;margin-right: 50px;">
+<p class="mtx"><a style="cursor: text;" href="#joinscroll"><strong>Creative</strong></a></p>
+</div>
+</div>
+<div class="tooltip">
+<h3>
+<span style="color: #008080; font-size: 20px;"><b>Join us at:</b></span> <code><span style="background-color: #808080; color: #ffffff; font-size: 1.5rem; cursor: pointer;"> join.rpimc.ml </span></code>
+</h3>
+<span id="myTooltip" class="tooltiptext">Copy to clipboard</span>
+</div>
+<style>html {
+  scroll-behavior: smooth;
+}
+.grow {
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  height: 49px;
+  width: 7rem;
+  margin: 5px 1% 5px 1%;
+  float: left;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: center;
+  overflow: hidden;
+}
+.grow2 {
+  padding: 5px 5px 5px 5px;
+  border-radius: 1px;
+  height: 49px;
+  width: 1rem;
+  margin: 5px 1% 5px 1%;
+  float: left;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: center;
+  overflow: hidden;
+}
+.grow:hover {
+  height: 145px;
+}</style> <style>.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  height: 35px;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -25px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}</style> <script>
+function myFunction() {
+  navigator.clipboard.writeText("join.rpimc.ml");
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied!";
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+</script>
 <style>.mtx a {
-  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #B3CEC2 50%);
-  background-position: -0% 0;
-  background-size: 200% auto;
-  color: #222;
-  font-size: 20px;
-  text-decoration: none;
-  transition: background-position 0.34s ease-out;
+   background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #B3CEC2 50%);
+   background-position: -0% 0;
+   background-size: 200% auto;
+   color: #222;
+   font-size: 20px;
+   text-decoration: none;
+   transition: background-position 0.34s ease-out;
 }
 .mtx a:hover {
-  background-position: -99.99% 0;
-  cursor:text;
+   background-position: -99.99% 0;
 }</style>
 </blockquote>
-
 				<div class="post-tags">
 					</div>
 	</div>
