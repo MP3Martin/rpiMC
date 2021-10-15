@@ -9,7 +9,7 @@
 
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
-	<!-- This site is optimized with the Yoast SEO plugin v17.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<!-- This site is optimized with the Yoast SEO plugin v17.3 - https://yoast.com/wordpress/plugins/seo/ -->
 	<title>rpiMC - Minecraft server</title>
 	<meta name="description" content="Minecraft server running on Raspberry pi 4b">
 	<link rel="canonical" href="https://hexagoncore.github.io/rpiMC/">
@@ -19,7 +19,7 @@
 	<meta property="og:description" content="Minecraft server running on Raspberry pi 4b">
 	<meta property="og:url" content="https://hexagoncore.github.io/rpiMC/">
 	<meta property="og:site_name" content="rpiMC">
-	<meta property="article:modified_time" content="2021-10-15T05:04:49+00:00">
+	<meta property="article:modified_time" content="2021-10-15T15:59:47+00:00">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:label1" content="Est. reading time">
 	<meta name="twitter:data1" content="1 minute">
@@ -79,7 +79,7 @@
 	                "@id": "https://hexagoncore.github.io/rpiMC/#organization"
 	            },
 	            "datePublished": "2021-04-23T11:40:02+00:00",
-	            "dateModified": "2021-10-15T05:04:49+00:00",
+	            "dateModified": "2021-10-15T15:59:47+00:00",
 	            "description": "Minecraft server running on Raspberry pi 4b",
 	            "breadcrumb": {
 	                "@id": "https://hexagoncore.github.io/rpiMC/#breadcrumb"
@@ -328,32 +328,43 @@ img.emoji {
 <a id="joinscroll" data-ps2id-target=""></a>
 <hr>
 <blockquote>
+
 <p>Join today and enjoy:</p>
 <div>
-<div class="grow" style="background-color: #2a75a9;">
-<p class="mtx"><a style="cursor: text;" href="#joinscroll"><strong>Survival</strong></a></p>
+<div id="dda" class="grow grow3 mtx2" style="background-color: #d9d9d9;">
+<p id="dda2" class="mtx"><a style="cursor: text;" href="#joinscroll"><strong>Survival</strong></a></p>
+<p style="color: #345154; font-size: 15px;"><b>Classic survival with few little tweaks</b></p>
 </div>
 <div class="grow2">
 <p>&#8211;</p>
 </div>
-<div class="grow" style="background-color: #2a75a9;margin-right: 50px;">
+<div class="grow mtx2" style="background-color: #d9d9d9;margin-right: 50px;">
 <p class="mtx"><a style="cursor: text;" href="#joinscroll"><strong>Creative</strong></a></p>
+<p style="color: #345154; font-size: 15px;"><b>Best place to show your builds without wasting materials<br><mark class="red">[COMMING SOON]</mark></b></p>
 </div>
 </div>
 <div class="tooltip">
-<h3>
+<h3 style="margin-top: 7px;">
 <span style="color: #008080; font-size: 20px;"><b>Join us at:</b></span> <code><span onclick="myFunction()" onmouseout="outFunc()" style="background-color: #808080; color: #ffffff; font-size: 1.5rem; cursor: pointer;"> join.rpimc.ml </span></code>
 </h3>
 <span id="myTooltip" class="tooltiptext">Copy to clipboard</span>
 </div>
-<style>html {
+<style>mark.red {
+    color:#0000A0;
+    background: none;
+}
+
+
+
+
+html {
   scroll-behavior: smooth;
 }
 .grow {
   padding: 5px 5px 5px 5px;
   border-radius: 10px;
-  height: 49px;
-  width: 7rem;
+  height: 40px;
+  width: 10rem;
   margin: 5px 1% 5px 1%;
   float: left;
   position: relative;
@@ -365,7 +376,7 @@ img.emoji {
 .grow2 {
   padding: 5px 5px 5px 5px;
   border-radius: 1px;
-  height: 49px;
+  height: 40px;
   width: 1rem;
   margin: 5px 1% 5px 1%;
   float: left;
@@ -375,8 +386,11 @@ img.emoji {
   text-align: center;
   overflow: hidden;
 }
+.grow3:hover {
+  height: 100px;
+}
 .grow:hover {
-  height: 145px;
+  height: 155px;
 }</style> <style>.tooltip {
   position: relative;
   display: inline-block;
@@ -467,6 +481,11 @@ function outFunc() {
 .mtx a:hover {
    background-position: -99.99% 0;
 }</style>
+<p style="font-size: 5px;">
+&nbsp;
+<br>
+&nbsp;
+</p>
 </blockquote>
 				<div class="post-tags">
 					</div>
@@ -532,5 +551,6 @@ var mPS2id_params = {"instances":{"mPS2id_instance_0":{"selector":"a[href*='#']:
 	<script>
 		/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
 	</script>
-	</body>
+	
+</body>
 </html>
