@@ -555,15 +555,7 @@ var mPS2id_params = {"instances":{"mPS2id_instance_0":{"selector":"a[href*='#']:
 	
 
 <script>
-  // replace the shown url
-  if (history.pushState) {
-    window.history.pushState(stateObj, "title", "url");
-  } else {
-    window.history.replaceState(stateObj, "title**", 'url');
-    // ** It seems that current browsers other than Safari don't support pushState
-    // title attribute. We can achieve the same thing by setting it in JS.
-    document.title = "Title";
-  }
+  history.replaceState('data to be passed', 'Title of the page', '/test');
 </script>
 
 
