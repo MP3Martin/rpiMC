@@ -557,8 +557,9 @@ var mPS2id_params = {"instances":{"mPS2id_instance_0":{"selector":"a[href*='#']:
 <script>
   var newurl = window.location.protocol + "//" + "rpimc.ml" + window.location.pathname;
   window.history.pushState({path:newurl},'',newurl);
-  if (location.protocol !== 'https:') {
-    location.replace(`https:${location.href.substring(location.protocol.length)}`);
+  var loc = window.location.href+'';
+  if (loc.indexOf('http://')==0){
+    window.location.href = loc.replace('http://','https://');
   }
 </script>
 -->
