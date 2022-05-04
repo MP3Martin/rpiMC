@@ -44,5 +44,5 @@ function isServerOnline (ip, port = 25565) {
 
 isServerOnline();
 
-colorById("server-status-text", "green");
-textById("server-status-text", "test");
+colorById("server-status-text", "red");
+textById("server-status-text", "WIP");
