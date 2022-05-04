@@ -8,3 +8,5 @@ function runFunction () {
 }
 
 isServerOnline();
+
+document.getElementById("server-status-text").style.color = "#da6310;";
