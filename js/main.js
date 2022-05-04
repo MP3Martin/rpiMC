@@ -27,4 +27,4 @@ function runFunction () {
 isServerOnline();
 
 colorById("server-status-text", "green");
-
+textById("server-status-text", "test");
