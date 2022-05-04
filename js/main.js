@@ -1,6 +1,7 @@
 /* -- Server status -- */
 
 function colorById (id, my_color = "black") {
+  my_color = my_color.toLowerCase();
   if (my_color === "black") {
     document.getElementById(id).style.color = "#000000";
   } else if (my_color === "loading") {
