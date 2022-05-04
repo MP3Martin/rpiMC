@@ -9,4 +9,4 @@ function runFunction () {
 
 isServerOnline();
 
-document.getElementById("server-status-text").style.color = "#da6310";
+document.getElementById("server-status-text").style.color = "#FFAE42";
