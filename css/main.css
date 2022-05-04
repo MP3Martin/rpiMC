@@ -1,5 +1,6 @@
 .server-status {
     background-color: #c7c0c0;
+    border-radius: 20px;
     -webkit-box-shadow: rgba(84, 175, 163, 0.2) 0px 7px 29px 0px;
             box-shadow: rgba(84, 175, 163, 0.2) 0px 7px 29px 0px;
 }
