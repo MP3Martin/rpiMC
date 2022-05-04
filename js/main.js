@@ -6,3 +6,5 @@ function isServerOnline (ip, port = 25565) {
 function runFunction () {
   console.log("test");
 }
+
+isServerOnline();
