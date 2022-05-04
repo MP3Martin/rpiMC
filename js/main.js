@@ -22,4 +22,5 @@ function runFunction () {
 
 isServerOnline();
 
+colorById("server-status-text", "green");
 
