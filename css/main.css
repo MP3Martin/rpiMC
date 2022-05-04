@@ -1,7 +1,7 @@
 .server-status {
-    background-color: #c7c0c0;
+    background-color: #ffffff;
     border-radius: 20px;
     min-height: 4rem;
-    -webkit-box-shadow: rgba(84, 175, 163, 0.2) 0px 7px 29px 0px;
-            box-shadow: rgba(84, 175, 163, 0.2) 0px 7px 29px 0px;
+    -webkit-box-shadow: rgba(84, 175, 163, 0.3) 0px 7px 29px 0px;
+            box-shadow: rgba(84, 175, 163, 0.3) 0px 7px 29px 0px;
 }
