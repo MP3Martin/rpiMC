@@ -12,6 +12,10 @@ function colorById (id, my_color = "black") {
   }
 }
 
+function textById (id, my_content = "") {
+  document.getElementById(id).textContent = my_content;
+}
+
 function isServerOnline (ip, port = 25565) {
   var t = setInterval(runFunction,3000);
 }
