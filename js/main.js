@@ -95,3 +95,4 @@ Array.from(document.querySelectorAll('[tip]')).forEach(el => {
     tip.style.top = e.clientY + 'px';
   };
 });
+
