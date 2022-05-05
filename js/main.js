@@ -93,4 +93,5 @@ new jBox('Tooltip', {
   color: '#eee',
   useTitle: false,
   size: 'small',
+  contentElementId: 'template_sample',
 });
