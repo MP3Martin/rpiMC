@@ -9,4 +9,15 @@
     -webkit-box-shadow: rgba(84, 175, 163, 0.3) 0px 7px 29px ;
             -webkit-box-shadow: rgba(84, 175, 163, 0.3) 0px 7px 29px 0px;
                     box-shadow: rgba(84, 175, 163, 0.3) 0px 7px 29px 0px;
+    -webkit-transition: -webkit-box-shadow 1s;
+    transition: -webkit-box-shadow 1s;
+    -o-transition: box-shadow 1s;
+    transition: box-shadow 1s;
+    transition: box-shadow 1s, -webkit-box-shadow 1s;
 }
+
+.server-status:hover {
+    -webkit-box-shadow: rgba(84, 175, 163, 0.4) 0px 7px 29px ;
+            -webkit-box-shadow: rgba(84, 175, 163, 0.4) 0px 7px 29px 0px;
+                    box-shadow: rgba(84, 175, 163, 0.4) 0px 7px 29px 0px;
+    }
