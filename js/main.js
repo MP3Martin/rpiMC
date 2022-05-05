@@ -32,11 +32,21 @@ $(document).ready(function(){
     } else {
       server_status = "online";
     }
-
     // console.log(data);
     console.log("Server is " + server_status);
   });
     // var t = setInterval(runFunction,3000);
+  }
+
+  function updateServerStatusText () {
+    if(server_status === "online") {
+      colorById("server-status-text", "green");
+      textById("server-status-text", "Online");
+    } else {
+      colorById("server-status-text", "red");
+      textById("server-status-text", "Offline");
+    }
+    
   }
 
   /* -- run all functions -- */
@@ -46,6 +56,7 @@ $(document).ready(function(){
   isServerOnline(my_server_ip, my_server_port);
   setInterval(function(){
     isServerOnline(my_server_ip, my_server_port);
+    updateServerStatusText();
   }, 6000);
 
 });
