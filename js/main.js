@@ -69,6 +69,6 @@ $(document).ready(function(){
   setInterval(function(){
     isServerOnline(my_server_ip, my_server_port);
     updateServerStatusText();
-  }, 5000);
+  }, 3000);
 
 });
