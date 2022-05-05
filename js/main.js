@@ -50,8 +50,8 @@ $(document).ready(function(){
   }
 
   /* -- run all functions -- */
-  colorById("server-status-text", "red");
-  textById("server-status-text", "- WIP -");
+  colorById("server-status-text", "loading");
+  textById("server-status-text", "Loading...");
 
   isServerOnline(my_server_ip, my_server_port);
   setInterval(function(){
