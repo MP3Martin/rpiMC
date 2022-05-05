@@ -18,29 +18,13 @@ $(document).ready(function(){
     document.getElementById(id).textContent = my_content;
   }
   
-  function httpGet(theUrl)
-  {
-      if (window.XMLHttpRequest)
-      {// code for IE7+, Firefox, Chrome, Opera, Safari
-          xmlhttp=new XMLHttpRequest();
-      }
-      else
-      {// code for IE6, IE5
-          xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-      }
-      xmlhttp.onreadystatechange=function()
-      {
-          if (xmlhttp.readyState==4 && xmlhttp.status==200)
-          {
-              return xmlhttp.responseText;
-          }
-      }
-      xmlhttp.open("GET", theUrl, false );
-      xmlhttp.send();    
-  }
-  
   function isServerOnline (ip, port = 25565) {
-    console.log(httpGet("https://api.minetools.eu/ping/join.rpimc.xyz/25565"));
+    $.getJSON('https://api.minetools.eu/ping/join.rpimc.xyz/25565', function(data) {
+    setTimeout(function(){
+      data = JSON.stringify(data);
+      console.log(data);
+    }, 0);
+  });
     // var t = setInterval(runFunction,3000);
   }
   
@@ -48,11 +32,5 @@ $(document).ready(function(){
   
   colorById("server-status-text", "red");
   textById("server-status-text", "- WIP -");
-  
-  $.getJSON('https://api.minetools.eu/ping/join.rpimc.xyz/25565', function(data) {
-    setTimeout(function(){
-      data = JSON.stringify(data);
-      console.log(data);
-    }, 6000);
-  });
+
 });
