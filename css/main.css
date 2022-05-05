@@ -41,7 +41,7 @@
   font-size: 16px;
   line-height: 20px;
   padding: 5px;
-  background: white;
+  background: rgb(204, 117, 117);
   border: 1px solid #ccc;
   visibility: hidden;
   opacity: 0;
