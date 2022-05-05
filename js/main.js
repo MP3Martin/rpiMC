@@ -86,4 +86,6 @@ $(document).ready(function(){
 new jBox('Tooltip', {
   attach: '.red-tooltip',
   content: 'Hello there!',
+  animationIn: 'fadeInDown',
+  animationOut: 'fadeOutDown'
 });
