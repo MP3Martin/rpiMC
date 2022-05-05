@@ -82,4 +82,5 @@ $(document).ready(function(){
 
 tippy('#real-time-map-wrapper', {
   content: 'My tooltip!',
+  animation: 'perspective-subtle',
 });
