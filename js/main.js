@@ -1,5 +1,9 @@
-/* -- Server status -- */
+/* -- Create global variables -- */
 server_status = "loading";
+
+/* -- Define variables -- */
+my_server_ip = "join.rpimc.xyz"
+my_server_port = 25565
 
 $(document).ready(function(){
   function colorById (id, my_color = "black") {
@@ -39,9 +43,9 @@ $(document).ready(function(){
   colorById("server-status-text", "red");
   textById("server-status-text", "- WIP -");
 
-  isServerOnline("join.rpimc.xyz", 25565);
+  isServerOnline(my_server_ip, my_server_port);
   setInterval(function(){
-    isServerOnline("join.rpimc.xyz", 25565);
+    isServerOnline(my_server_ip, my_server_port);
   }, 6000);
 
 });
