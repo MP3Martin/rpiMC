@@ -18,7 +18,7 @@
 }
 
 .server-status:hover {
-    -webkit-box-shadow: rgba(84, 175, 163, 0.8) 0px 7px 29px ;
-            -webkit-box-shadow: rgba(84, 175, 163, 0.8) 0px 7px 29px 0px;
-                    box-shadow: rgba(84, 175, 163, 0.8) 0px 7px 29px 0px;
+    -webkit-box-shadow: rgba(84, 175, 163, 0.6) 0px 7px 29px ;
+            -webkit-box-shadow: rgba(84, 175, 163, 0.6) 0px 7px 29px 0px;
+                    box-shadow: rgba(84, 175, 163, 0.6) 0px 7px 29px 0px;
     }
