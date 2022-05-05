@@ -26,9 +26,13 @@ $(document).ready(function(){
   function realTimeMapEnabled (my_enabled = true) {
     if (my_enabled === true) {
       document.getElementById("real-time-map").classList.remove("disabledbutton");
+      document.getElementById("real-time-map-wrapper").classList.remove("disabledcursor");
+      document.getElementById("real-time-map-wrapper").classList.remove("loadingcursor");
       document.getElementById("real-time-map-color").style.color = "#00ff00";
     } else {
       document.getElementById("real-time-map").classList.add("disabledbutton");
+      document.getElementById("real-time-map-wrapper").classList.add("disabledcursor");
+      document.getElementById("real-time-map-wrapper").classList.remove("loadingcursor");
       document.getElementById("real-time-map-color").style.color = "#66ff66";
     }
   }
