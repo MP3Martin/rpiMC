@@ -2,8 +2,9 @@
 server_status = "loading";
 
 /* -- Define variables -- */
-my_server_ip = "join.rpimc.xyz"
-my_server_port = 25565
+my_server_ip = "join.rpimc.xyz";
+my_server_port = 25565;
+window.enable_red_tooltip = true;
 
 $(document).ready(function(){
   function colorById (id, my_color = "black") {
@@ -29,11 +30,13 @@ $(document).ready(function(){
       document.getElementById("real-time-map-wrapper").classList.remove("disabledcursor");
       document.getElementById("real-time-map-wrapper").classList.remove("loadingcursor");
       document.getElementById("real-time-map-color").style.color = "#00ff00";
+      window.enable_red_tooltip = false;
     } else {
       document.getElementById("real-time-map").classList.add("disabledbutton");
       document.getElementById("real-time-map-wrapper").classList.add("disabledcursor");
       document.getElementById("real-time-map-wrapper").classList.remove("loadingcursor");
       document.getElementById("real-time-map-color").style.color = "#66ff66";
+      window.enable_red_tooltip = true;
     }
   }
   
@@ -91,7 +94,9 @@ Array.from(document.querySelectorAll('[tip]')).forEach(el => {
     ')';
   el.appendChild(tip);
   el.onmousemove = e => {
-    tip.style.left = e.clientX + 'px'
-    tip.style.top = e.clientY + 'px';
+    if (window.enable_red_tooltip === true) {
+      tip.style.left = e.clientX + 'px'
+      tip.style.top = e.clientY + 'px';
+    }
   };
 });
