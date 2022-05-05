@@ -34,8 +34,8 @@ $(document).ready(function(){
     }
     // console.log(data);
     console.log("Server is " + server_status);
+    return 0;
   });
-    // var t = setInterval(runFunction,3000);
   }
 
   function updateServerStatusText () {
