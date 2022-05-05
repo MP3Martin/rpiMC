@@ -84,5 +84,6 @@ $(document).ready(function(){
 
 /* -- TOOLTIPS -- */
 new jBox('Tooltip', {
-  attach: '.tooltip'
+  attach: '.tooltip',
+  content: '<i>Hello there!</i>',
 });
