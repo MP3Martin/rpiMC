@@ -25,11 +25,11 @@ $(document).ready(function(){
 
   function realTimeMapEnabled (my_enabled = true) {
     if (my_enabled === true) {
-      document.getElementById("real-time-map-color").classList.remove("disabledbutton");
-      document.getElementById(id).style.color = "#00ff00";
+      document.getElementById("real-time-map").classList.remove("disabledbutton");
+      document.getElementById("real-time-map-color").style.color = "#00ff00";
     } else {
-      document.getElementById("real-time-map-color").classList.add("disabledbutton");
-      document.getElementById(id).style.color = "#66ff66";
+      document.getElementById("real-time-map").classList.add("disabledbutton");
+      document.getElementById("real-time-map-color").style.color = "#66ff66";
     }
   }
   
