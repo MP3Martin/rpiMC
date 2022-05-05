@@ -19,14 +19,14 @@ $(document).ready(function(){
   }
   
   function isServerOnline (ip, port = 25565) {
-    $.getJSON('https://api.minetools.eu/ping/join.rpimc.xyz/25565', function(data) {
+    $.getJSON('https://api.minetools.eu/ping/' + ip + '/' + port, function(data) {
     data = JSON.stringify(data);
     console.log(data);
   });
     // var t = setInterval(runFunction,3000);
   }
   
-  isServerOnline();
+  isServerOnline("join.rpimc.xyz", 25565);
   
   colorById("server-status-text", "red");
   textById("server-status-text", "- WIP -");
