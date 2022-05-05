@@ -1,4 +1,5 @@
 /* -- Server status -- */
+server_status = "loading";
 
 $(document).ready(function(){
   function colorById (id, my_color = "black") {
@@ -27,7 +28,9 @@ $(document).ready(function(){
   }
   
   isServerOnline("join.rpimc.xyz", 25565);
-  
+
+  console.log(server_status);
+
   colorById("server-status-text", "red");
   textById("server-status-text", "- WIP -");
 
