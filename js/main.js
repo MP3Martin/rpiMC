@@ -33,7 +33,7 @@ $(document).ready(function(){
       server_status = "online";
     }
     // console.log(data);
-    console.log("Server is " + server_status);
+    // console.log("Server is " + server_status);
     updateServerStatusText();
   });
   }
