@@ -22,6 +22,14 @@ $(document).ready(function(){
   function textById (id, my_content = "") {
     document.getElementById(id).textContent = my_content;
   }
+
+  function realTimeMapEnabled (my_enabled = true) {
+    if (my_enabled === true) {
+      $("#real-time-map").removeClass("disabledbutton");
+    } else {
+      $("#real-time-map").addClass("disabledbutton");
+    }
+  }
   
   function isServerOnline (ip, port = 25565) {
     $.getJSON('https://api.minetools.eu/ping/' + ip + '/' + port, function(data) {
