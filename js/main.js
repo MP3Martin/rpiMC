@@ -47,3 +47,9 @@ isServerOnline();
 
 colorById("server-status-text", "red");
 textById("server-status-text", "WIP");
+
+$(document).ready(function(){
+  $.getJSON('https://api.minetools.eu/ping/join.rpimc.xyz/25565', function(data) {
+    console.log(data);
+  });
+});
