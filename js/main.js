@@ -50,9 +50,13 @@ $(document).ready(function(){
     if(server_status === "online") {
       colorById("server-status-text", "green");
       textById("server-status-text", "Online");
+
+      realTimeMapEnabled(true);
     } else {
       colorById("server-status-text", "red");
       textById("server-status-text", "Offline");
+
+      realTimeMapEnabled(false);
     }
     
   }
