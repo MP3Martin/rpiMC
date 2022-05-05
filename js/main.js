@@ -83,15 +83,4 @@ $(document).ready(function(){
 });
 
 /* -- TOOLTIPS -- */
-new jBox('Tooltip', {
-  attach: '.red-tooltip',
-  content: 'Hello there!',
-  animationIn: 'fadeInDown',
-  animationOut: 'fadeOutDown',
-  position: 'top',
-  background: '#55b555',
-  color: '#eee',
-  useTitle: false,
-  size: 'small',
-  contentElementId: 'template_sample',
-});
+// NOTHING
