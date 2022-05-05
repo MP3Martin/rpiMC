@@ -22,13 +22,15 @@ $(document).ready(function(){
   function isServerOnline (ip, port = 25565) {
     $.getJSON('https://api.minetools.eu/ping/' + ip + '/' + port, function(data) {
     data = JSON.stringify(data);
-    console.log(data);
     /* tell if the server is online or not */
     if(data.includes('{"error":"')) {
       server_status = "offline";
     } else {
       server_status = "online";
     }
+
+    console.log(data);
+    console.log(server_status);
   });
     // var t = setInterval(runFunction,3000);
   }
