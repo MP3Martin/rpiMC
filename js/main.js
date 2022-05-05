@@ -26,12 +26,11 @@ $(document).ready(function(){
   });
     // var t = setInterval(runFunction,3000);
   }
-  
-  isServerOnline("join.rpimc.xyz", 25565);
 
-  console.log(server_status);
-
+  /* -- run all functions -- */
   colorById("server-status-text", "red");
   textById("server-status-text", "- WIP -");
+
+  isServerOnline("join.rpimc.xyz", 25565);
 
 });
