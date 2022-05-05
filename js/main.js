@@ -46,10 +46,12 @@ function isServerOnline (ip, port = 25565) {
 isServerOnline();
 
 colorById("server-status-text", "red");
-textById("server-status-text", "WIP");
+textById("server-status-text", "- WIP -");
 
 $(document).ready(function(){
   $.getJSON('https://api.minetools.eu/ping/join.rpimc.xyz/25565', function(data) {
-    console.log(data);
+    setTimeout(function(){
+      console.log(data);
+    }, 2000);
   });
 });
