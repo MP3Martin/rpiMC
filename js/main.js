@@ -25,9 +25,9 @@ $(document).ready(function(){
 
   function realTimeMapEnabled (my_enabled = true) {
     if (my_enabled === true) {
-      $("#real-time-map").removeClass("disabledbutton");
+      document.getElementById("real-time-map").classList.remove("disabledbutton");
     } else {
-      $("#real-time-map").addClass("disabledbutton");
+      document.getElementById("real-time-map").classList.add("disabledbutton");
     }
   }
   
