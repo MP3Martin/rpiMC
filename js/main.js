@@ -52,6 +52,6 @@ $(document).ready(function(){
   $.getJSON('https://api.minetools.eu/ping/join.rpimc.xyz/25565', function(data) {
     setTimeout(function(){
       console.log(data);
-    }, 2000);
+    }, 7000);
   });
 });
