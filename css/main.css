@@ -1,5 +1,6 @@
 .disabledbutton {
     pointer-events: none;
+    cursor: not-allowed;
 }
 
 .server-status {
