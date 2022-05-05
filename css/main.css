@@ -34,3 +34,25 @@
         -webkit-box-shadow: rgba(84, 175, 163, 0.5) 0px 7px 29px 0px;
         box-shadow: rgba(84, 175, 163, 0.5) 0px 7px 29px 0px;
 }
+
+/* -- TOOLTIPS -- */
+[tip] .tooltip {
+  position: fixed;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 5px;
+  background: white;
+  border: 1px solid #ccc;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: opacity 0.3s, visibility 0s;
+  -o-transition: opacity 0.3s, visibility 0s;
+  transition: opacity 0.3s, visibility 0s;
+}
+
+[tip]:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
