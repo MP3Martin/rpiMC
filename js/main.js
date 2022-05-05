@@ -78,3 +78,8 @@ $(document).ready(function(){
   }, 3000);
 
 });
+
+
+tippy('#real-time-map-wrapper', {
+  content: 'My tooltip!',
+});
