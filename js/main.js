@@ -23,6 +23,12 @@ $(document).ready(function(){
     $.getJSON('https://api.minetools.eu/ping/' + ip + '/' + port, function(data) {
     data = JSON.stringify(data);
     console.log(data);
+    /* tell if the server is online or not */
+    if(data.includes('{"error":"')) {
+      server_status = "offline";
+    } else {
+      server_status = "online";
+    }
   });
     // var t = setInterval(runFunction,3000);
   }
