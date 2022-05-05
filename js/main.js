@@ -79,6 +79,9 @@ $(document).ready(function(){
 
 });
 
+$( function() {
+  $( document ).tooltip();
+} );
 
 // tippy('#real-time-map-wrapper', {
 //   content: 'My tooltip!',
