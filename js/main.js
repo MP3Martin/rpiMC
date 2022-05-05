@@ -29,8 +29,8 @@ $(document).ready(function(){
       server_status = "online";
     }
 
-    console.log(data);
-    console.log(server_status);
+    // console.log(data);
+    console.log("Server is " + server_status);
   });
     // var t = setInterval(runFunction,3000);
   }
@@ -39,6 +39,8 @@ $(document).ready(function(){
   colorById("server-status-text", "red");
   textById("server-status-text", "- WIP -");
 
-  isServerOnline("join.rpimc.xyz", 25565);
+  setTimeout(function(){
+    isServerOnline("join.rpimc.xyz", 25565);
+  }, 6000);
 
 });
