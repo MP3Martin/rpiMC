@@ -51,7 +51,8 @@ textById("server-status-text", "- WIP -");
 $(document).ready(function(){
   $.getJSON('https://api.minetools.eu/ping/join.rpimc.xyz/25565', function(data) {
     setTimeout(function(){
+      data = JSON.stringify(data);
       console.log(data);
-    }, 7000);
+    }, 6000);
   });
 });
