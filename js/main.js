@@ -39,6 +39,7 @@ $(document).ready(function(){
   colorById("server-status-text", "red");
   textById("server-status-text", "- WIP -");
 
+  isServerOnline("join.rpimc.xyz", 25565);
   setInterval(function(){
     isServerOnline("join.rpimc.xyz", 25565);
   }, 6000);
