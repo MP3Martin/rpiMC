@@ -20,10 +20,8 @@ $(document).ready(function(){
   
   function isServerOnline (ip, port = 25565) {
     $.getJSON('https://api.minetools.eu/ping/join.rpimc.xyz/25565', function(data) {
-    setTimeout(function(){
-      data = JSON.stringify(data);
-      console.log(data);
-    }, 0);
+    data = JSON.stringify(data);
+    console.log(data);
   });
     // var t = setInterval(runFunction,3000);
   }
