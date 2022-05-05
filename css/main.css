@@ -8,17 +8,17 @@
     padding-bottom: 0rem;
     -webkit-box-shadow: rgba(84, 175, 163, 0.3) 0px 7px 29px ;
             -webkit-box-shadow: rgba(84, 175, 163, 0.3) 0px 7px 29px 0px;
-                    box-shadow: rgba(84, 175, 163, 0.3) 0px 7px 29px 0px;
+            box-shadow: rgba(84, 175, 163, 0.3) 0px 7px 29px 0px;
                     
-    -webkit-transition: -webkit-box-shadow 1s;
-    transition: -webkit-box-shadow 1s;
-    -o-transition: box-shadow 1s;
-    transition: box-shadow 1s;
-    transition: box-shadow 1s, -webkit-box-shadow 1s;
+    -webkit-transition: -webkit-box-shadow 0.5s;
+        transition: -webkit-box-shadow 0.5s;
+        -o-transition: box-shadow 0.5s;
+        transition: box-shadow 0.5s;
+        transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
 }
 
 .server-status:hover {
     -webkit-box-shadow: rgba(84, 175, 163, 0.6) 0px 7px 29px ;
             -webkit-box-shadow: rgba(84, 175, 163, 0.6) 0px 7px 29px 0px;
-                    box-shadow: rgba(84, 175, 163, 0.6) 0px 7px 29px 0px;
+            box-shadow: rgba(84, 175, 163, 0.6) 0px 7px 29px 0px;
     }
