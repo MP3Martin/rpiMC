@@ -7,4 +7,4 @@
 # rpiMC
 Repository for our server.
 
-The website was first genearzed using wordpress (and WP static website generator). The website is now being edited manually.
+The website was first genearated using wordpress (and WP static website generator). The website is now being edited manually.
