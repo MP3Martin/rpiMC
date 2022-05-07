@@ -4,7 +4,6 @@ server_status = "loading";
 /* -- Define variables -- */
 my_server_ip = "join.rpimc.xyz";
 my_server_port = 25565;
-window.enable_red_tooltip = true;
 
 $(document).ready(function(){
   function colorById (id, my_color = "black") {
