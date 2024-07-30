@@ -77,7 +77,7 @@ $(document).ready(function(){
   setInterval(function(){
     isServerOnline(my_server_ip, my_server_port);
     updateServerStatusText();
-  }, 3000);
+  }, 10 * 1000);
 
 });
 
