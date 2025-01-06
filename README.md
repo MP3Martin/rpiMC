@@ -8,3 +8,6 @@
 Repository for our server.
 
 The website was first genearated using **WordPress** (and WP static website generator). The website is now being **edited manually**.
+
+## Archived
+Archived because the Minecraft server got shut down (it never got popular, was hosted on a slowish vps, the db got corrupted, no motivation to keep it running).
